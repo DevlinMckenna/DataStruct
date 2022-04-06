@@ -1,0 +1,17 @@
+main =>
+   finiteAutomata("abababb",0),
+   println(accept).
+
+finiteAutomata([],State) => final(State).
+finiteAutomata([Sym|Syms],State) =>
+   move(State,Sym,NextState),
+   finiteAutomata(Syms,NextState).
+
+index(+,+,-)
+move(0,a,0).
+move(0,a,1).
+move(0,b,0).
+move(1,b,2).
+move(2,b,3).
+
+final(3) => true.
