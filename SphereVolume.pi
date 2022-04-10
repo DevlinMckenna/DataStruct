@@ -1,0 +1,5 @@
+main =>
+ println(vol(5)).
+ vol(R)= 4/3*pi()*R*R*R.
+ 
+
