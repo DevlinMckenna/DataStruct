@@ -1,0 +1,9 @@
+
+
+main =>
+
+L=[a,b,c,d,z],
+println(myLast(L)).
+
+myLast([X]) = X.
+myLast([_|Xs]) = myLast(Xs).
