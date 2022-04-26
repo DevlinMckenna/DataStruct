@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class Main {
   public static void main(String[] args) {
-    Pattern pattern = Pattern.compile("f..k", Pattern.CASE_INSENSITIVE);
+    Pattern pattern = Pattern.compile("[a-zA-Z]=.", Pattern.CASE_INSENSITIVE);
     
  while(true){
    Console console = System.console();
@@ -14,9 +14,9 @@ public class Main {
     Matcher matcher = pattern.matcher(myWord);
     boolean matchFound = matcher.find();
     if(matchFound) {
-      System.out.println("Match found");
+      System.out.println("valid input");
     } else {
-      System.out.println("Match not found");
+      System.out.println("Invalid input");
     }
     }
   }
