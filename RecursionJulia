@@ -1,0 +1,6 @@
+function sumRecursive(n)
+     n>1 ? sumRecursive(n-1) + n : n
+end
+println("the cumulative sum is ")
+println(sumRecursive(450))
+
